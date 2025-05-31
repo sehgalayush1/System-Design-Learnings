@@ -7,22 +7,24 @@ This document is for your notes on the High-Level Design topics covered in Week 
 ## 1. Introduction to System Design
 
 *   **What is System Design?**
-    *   (Your notes here)
+    *   Architecting large-scale, distributed systems (e.g., Netflix, Google).
+    *   Components on networked computers coordinating via messages.
+    *   Crucial for interviews (FAANG) & real-world scalable, reliable products.
 *   **Key Goals of System Design:**
-    *   Scalability: (Your notes here)
-    *   Availability: (Your notes here)
-    *   Reliability: (Your notes here)
-    *   Performance: (Your notes here)
-    *   Maintainability: (Your notes here)
-    *   Cost-Effectiveness: (Your notes here)
+    *   Scalability: Handle increasing load (users, data). Vertical (up) vs. Horizontal (out - preferred). Ex: Amazon on Black Friday.
+    *   Availability: System operational & accessible (uptime %, e.g., 99.999%). Achieved via redundancy, failover. Ex: Google Search.
+    *   Reliability: System performs intended function correctly. Achieved via error handling, fault tolerance. Ex: Banking transactions.
+    *   Performance: Responsiveness. Latency (delay for one op) & Throughput (ops per time unit). Ex: Stock trading platforms.
+    *   Maintainability: Ease of modification, fixing, extending. Achieved via modularity, clean code. Ex: E-commerce sites adding features.
+    *   Cost-Effectiveness: Balance features/performance with development/operational costs. Ex: MVP startups using serverless.
 *   **The Process of System Design:**
-    *   Requirement Gathering: (Your notes here)
-    *   Estimation: (Your notes here)
-    *   System Interface Definition: (Your notes here)
-    *   Data Model Design: (Your notes here)
-    *   High-Level Architecture: (Your notes here)
-    *   Detailed Design: (Your notes here)
-    *   Identifying Bottlenecks and Trade-offs: (Your notes here)
+    *   Requirement Gathering: Functional (what it does) & Non-Functional (how it should be - scalability, perf, etc.).
+    *   Estimation: "Back-of-the-envelope" for traffic (DAU, QPS), storage, bandwidth.
+    *   System Interface Definition: APIs (e.g., REST, GraphQL) defining interactions.
+    *   Data Model Design: Data structure, storage (SQL/NoSQL), schema, relationships.
+    *   High-Level Architecture: Block diagram of main components (clients, LBs, servers, DBs, caches, MQs) & connections.
+    *   Detailed Design: Deeper dive into specific complex components, algorithms, tech choices.
+    *   Identifying Bottlenecks and Trade-offs: No perfect system; make informed decisions (e.g., consistency vs. availability).
 
 ---
 
